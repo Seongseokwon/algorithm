@@ -1,3 +1,8 @@
+/**
+ * 원소가 알맞은 위치에 도달할 때까지 반복적으로 왼쪽으로 이동하며 정렬
+ * 
+ * @param {number[]} arr 
+ */
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
     // 반복적으로 왼쪽으로 이동 시켜줄 것이기 때문에 아래와 같이 반복문을 작성한다. 
@@ -16,3 +21,5 @@ function insertionSort(arr) {
 
   return arr;
 }
+
+
