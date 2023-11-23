@@ -18,5 +18,5 @@
   - 케이스에 따라 시간복잡도가 달라진다. <br>
     정렬이 되있는 경우: O(N) <br>
     정렬이 되있지 않은경우: 최대 O(N²) 
-  - [ 삽입 정렬 구현 ](https://github.com/Seongseokwon/algorithm/blob/main/sorting/insetion-sort.js) 
+  - [ 삽입 정렬 구현 ](https://github.com/Seongseokwon/algorithm/blob/main/sorting/insertion-sort.js) 
   
