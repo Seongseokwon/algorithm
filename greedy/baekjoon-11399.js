@@ -1,25 +1,19 @@
-const arr= [3, 1, 4, 3, 2];
-const h = [];
+const fs = require("fs");
+const input = fs.readFileSync("./test.txt").toString().split("\n");
 
-/**
- * 내 풀이 
-*/
-let total = 0;
-let acc = 0;
 
-for(let i = 0; i < arr.length; i++) {
-  h.push([i, arr[i]]);
+const [n] = input[0].split(' ').map(Number);
+const arr = input[1].split(' ').map(Number).sort();
+
+let accumulate = 0;
+let result = 0;
+
+for(let i = 0; i < n; i++) {
+  accumulate += arr[i];
+  result +=  accumulate;
 }
-h.sort((a, b) => a[1] - b[1]);
-for(let i = 0; i < h.length; i++) {
-  if (acc === 0) {
-    total = acc = h[i][1];
-  } else {
-    acc += h[i][1]
-    total += acc;
-  }
-}
-console.log(total);
+
+console.log(result)
 
 /**
  * 강의 풀이
